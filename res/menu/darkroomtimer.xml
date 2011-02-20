@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/preferences" android:title="Settings" android:icon="@android:drawable/ic_menu_preferences" />
+<item android:id="@+id/iso" android:title="Change ISO" android:icon="@android:drawable/ic_menu_more" />
+</menu>
