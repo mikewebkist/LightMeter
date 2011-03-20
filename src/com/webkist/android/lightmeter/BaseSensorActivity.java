@@ -1,7 +1,5 @@
 package com.webkist.android.lightmeter;
 
-import java.util.List;
-
 import android.app.Activity;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;

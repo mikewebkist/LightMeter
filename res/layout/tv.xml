@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Tv"
-    />
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Shutter Priority" />
+
+	<com.webkist.android.lightmeter.NumberPicker android:id="@+id/shutterPicker"
+		android:layout_height="wrap_content" android:layout_width="fill_parent" />
+
+	<TextView android:id="@+id/sensorValues" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="(initializing)" />
+
 </LinearLayout>

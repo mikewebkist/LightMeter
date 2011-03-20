@@ -30,6 +30,6 @@
 		android:id="@+id/sensorValues"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
-		android:text="EV 1" />
+		android:text="(initializing)" />
 
 </LinearLayout>

@@ -21,18 +21,20 @@ public class LightMeter extends TabActivity {
 		Resources res = getResources(); // Resource object to get Drawables
 		TabHost tabHost = getTabHost(); // The activity TabHost
 		TabHost.TabSpec spec; // Resusable TabSpec for each tab
-		Intent intent; // Reusable Intent for each tab
 
 		// Create an Intent to launch an Activity for the tab (to be reused)
-		intent = new Intent().setClass(this, AvActivity.class);
+		Intent avIntent = new Intent().setClass(this, AvActivity.class);
+		Intent tvIntent = new Intent().setClass(this, TvActivity.class);
+//		Intent pIntent = new Intent().setClass(this, pActivity.class);
+//		Intent mIntent = new Intent().setClass(this, mActivity.class);
 		
-		spec = tabHost.newTabSpec("Av").setIndicator("Aperture", res.getDrawable(R.drawable.ic_tab_av)).setContent(intent);
+		spec = tabHost.newTabSpec("Av").setIndicator("Aperture", res.getDrawable(R.drawable.ic_tab_av)).setContent(avIntent);
 		tabHost.addTab(spec);
-		spec = tabHost.newTabSpec("Tv").setIndicator("Shutter", res.getDrawable(R.drawable.ic_tab_tv)).setContent(intent);
+		spec = tabHost.newTabSpec("Tv").setIndicator("Shutter", res.getDrawable(R.drawable.ic_tab_tv)).setContent(tvIntent);
 		tabHost.addTab(spec);
-		spec = tabHost.newTabSpec("P").setIndicator("Program", res.getDrawable(R.drawable.ic_tab_p)).setContent(intent);
+		spec = tabHost.newTabSpec("P").setIndicator("Program", res.getDrawable(R.drawable.ic_tab_p)).setContent(avIntent);
 		tabHost.addTab(spec);
-		spec = tabHost.newTabSpec("M").setIndicator("Manual", res.getDrawable(R.drawable.ic_tab_m)).setContent(intent);
+		spec = tabHost.newTabSpec("M").setIndicator("Manual", res.getDrawable(R.drawable.ic_tab_m)).setContent(tvIntent);
 		tabHost.addTab(spec);
 
 		tabHost.setCurrentTab(2);

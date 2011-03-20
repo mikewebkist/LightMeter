@@ -3,4 +3,5 @@
     <string name="hello">Hello World, AvActivity!</string>
     <string name="app_name">LightMeter</string>
     <string name="AvSpinnerPrompt">Lock Aperture To</string>
+    <string name="TvSpinnerPrompt">Lock Shutter To</string>
 </resources>
