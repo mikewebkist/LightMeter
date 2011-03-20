@@ -1,9 +1,8 @@
 package com.webkist.android.lightmeter;
 
-import android.app.Activity;
 import android.os.Bundle;
 
-public class AvActivity extends Activity {
+public class AvActivity extends BaseSensorActivity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
