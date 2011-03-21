@@ -3,12 +3,14 @@ package com.webkist.android.lightmeter;
 import android.os.Bundle;
 
 public class TvActivity extends BaseSensorActivity {
-    /** Called when the activity is first created. */
-	final static int speeds[] = { 1, 2, 4, 8, 15, 30, 60, 125, 250, 500, 1000, 2000, 4000 };
+	static int shutterSpeed = 0;
+	static int apertureValue = 0;
+	static int isoSpeed = 0;
 	
 	public static final NumberPicker.Formatter SHUTTER_FORMATTER =
 		new NumberPicker.Formatter() {
             public String toString(int value) {
+            	TvActivity.shutterSpeed = value;
                 if(speeds[value] == 1) {
                 	return "1";
                 } else {
@@ -25,7 +27,7 @@ public class TvActivity extends BaseSensorActivity {
         setContentView(R.layout.tv);
         NumberPicker shutter = (NumberPicker) findViewById(R.id.shutterPicker);
         shutter.setFormatter(SHUTTER_FORMATTER);
-        shutter.setRange(0, speeds.length);
+        shutter.setRange(0, speeds.length - 1);
         shutter.setSpeed(100);
         shutter.setIncBy(1);
         shutter.setEnabled(true);

@@ -6,7 +6,7 @@
 		android:layout_height="wrap_content" android:text="Shutter Priority" />
 
 	<com.webkist.android.lightmeter.NumberPicker android:id="@+id/shutterPicker"
-		android:layout_height="wrap_content" android:layout_width="fill_parent" />
+		android:layout_height="wrap_content" android:layout_width="128sp" />
 
 	<TextView android:id="@+id/sensorValues" android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:text="(initializing)" />
